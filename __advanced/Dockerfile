@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/mssql/server:2022-latest
 # podman needs the user root explicit for using apt-get
 USER root
 
-ARG SOURCE_CONNECTION_STR="Server=tcp:ssudemosssqlserver.database.windows.net,1433;Initial Catalog=ssudemosql;Persist Security Info=False;User ID=ssuadmin;Password=ssu5admin1337!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Integrated Security=False"
+ARG SOURCE_CONNECTION_STR=""
 ARG SA_PASSWORD=dev_sa1337!
 ARG SA_USER=sa
 ARG MSSQL_COLLATION=SQL_Latin1_General_CP1_CI_AS
